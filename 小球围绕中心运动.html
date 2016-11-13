@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+          <style>
+              @keyframes demoJun {
+                  100%{
+                      transform: rotate(360deg);
+                  }
+              }
+              .demo{
+                  width: 200px;
+                  height: 200px;
+                  /*background-color: aqua;*/
+                  animation-name: demoJun;
+                  animation-duration: 3s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+
+
+
+              }
+              .one{
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+              }
+              @keyframes topJun {
+                  100%{
+                      transform: translateY(-40px)
+
+                  }
+              }
+              .div1{
+                  margin-left: 50px;
+                  /*position: absolute;*/
+                 background-color: blue;
+                  animation-name: topJun;
+
+                  animation-duration: 1s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  animation-direction: alternate;
+                  /*animation-delay: 1s;*/
+              }
+              @keyframes downJun {
+                  100%{   /*transform: translateX(100px);*/
+                      transform: translateY(40px)
+                  }
+              }
+              .div2{
+                  margin-left: 50px;
+                  /*position: absolute;*/
+                  background-color: red;
+                  animation-name: downJun;
+                  animation-duration: 1s;
+                  animation-iteration-count: infinite;
+                  animation-timing-function: linear;
+                  animation-direction: alternate;
+                  /*animation-delay: 1s;*/
+              }
+          </style>
+</head>
+<body>
+      <div class="demo">
+           <div class=" one div1"></div>
+          <div class=" one div2"></div>
+      </div>
+</body>
+</html>
