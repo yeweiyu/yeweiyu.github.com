@@ -1,0 +1,183 @@
+/*背景图片部分*/
+
+.banner {
+    position: relative;
+    z-index: -1;
+}
+.banner a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 613px;
+    background: url(../images/bg.jpg) no-repeat top center;
+}
+/*背景图片结束*/
+/*商品信息部分*/
+.box{
+	height: 613px;
+	
+	/*overflow: hidden;*/
+}
+.regular{
+    position: relative;
+    float: left;
+}
+.regular img.top{
+   padding-top:17px;
+   padding-left: 12px;
+ /*  background-color: red;*/
+}
+button{
+	width: 37px;
+	height: 69px;
+}
+.regular .left{
+	position: absolute;
+	left: 12px;
+	top: 200px;
+}
+.regular .right{
+	position: absolute;
+	right: 0px;
+	top: 200px;
+}
+.slider-nav{
+    position: absolute;
+    bottom: 8px;
+    left: 45%;
+    margin-left: -66px;
+}
+.slider-nav li{
+    float: left;
+    width: 10px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    margin: 0 2px;
+    cursor: pointer;
+}
+/*右侧飞机票部分*/
+.news{
+	height: 454px;
+	width: 250px;
+	margin-top: 17px;
+	border: 1px solid #E4E4E4;
+	float: right;
+}
+.news .dt{
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #E4E4E4;
+}
+.news h2{
+	float: left;
+}
+.news .more{
+	float: right;
+}
+.news-bottom{
+	height: 125px;
+	border-bottom: 1px solid #E4E4E4;
+}
+.news-bottom span{
+      text-indent: 0.5em;
+      margin-right: 7px;
+      font-weight: 700;
+}
+.news-bottom ul li{
+	height: 24px;
+	line-height: 35px;
+
+}
+.icon li{
+    width: 41px;
+    height: 72px;
+    border: 1px solid #E4E4E4;
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    border-top: 0;
+}
+.icon img{
+	clip: rect(0px,25px,25px,0px);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.icon span{
+     position: absolute;
+     left: 20px;
+     bottom: 0;
+}
+/*飞机票部分结束*/
+/*商品类的下部分*/
+.box_bottom{
+	height: 164px;
+	width: 1210px;
+	/*background-color: blue;*/
+	float: right;
+}
+.box_bottom li.one{
+    float: right;
+    margin-right: -12px;
+}
+.box_bottom li{
+  margin-left: -19px;
+  float: left;
+}
+/*商品类的下部分结束*/
+/*最后的尾部部分*/
+.footer{
+	height: 300px;
+	/*width: 210px;*/
+	margin-top:30px;
+	/*background-color:red; */	
+	overflow: hidden;
+}
+.footer .footer_top{
+	height: 100px;
+	margin-top: 5px;
+	background-color: #F5F5F5
+}
+.footer_top img{
+	padding-top: 20px;
+	padding-left: 65px;
+	padding-right: 20px;
+}
+.content dl{
+	margin-top: 10px;
+	float: left;
+}
+.content dl dt{
+
+	height: 40px;
+	width: 180px;
+	font-size: 22px;
+	line-height: 40px;
+}
+ dl a{
+ 	float: right;
+ }
+ /*中国地图*/
+ dl.one{
+ 	height: 180px;
+ 	width: 230px;
+ 	text-indent: 2em;
+ 	background-image: url("../images/20130330B_1.png");
+ 	background-position: left -120px;
+ }
+ /*底部结束*/
+
+/*控制图片按钮*/
+#pre{
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+#next{
+	filter:alpha(opacity:0);
+	opacity: 0;
+}

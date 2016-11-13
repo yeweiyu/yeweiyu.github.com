@@ -1,0 +1,363 @@
+
+ *{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ fieldset, img,input,button 
+{ 
+    border:none; padding:0;margin:0;outline-style:none; 
+}
+ body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+.col-red{color: #C81623!important;}
+
+
+/*清除浮动*/
+.clearfix:before,.clearfix:after 
+{
+    content:"";
+    display:table;
+}
+.clearfix:after
+{
+    clear:both;
+}
+.clearfix
+{
+    *zoom:1;/*IE/7/6*/
+}
+
+li, ol 
+{ 
+    list-style:none; 
+}
+
+ /*公共部分*/
+ .fl{
+      float: left;
+  }
+
+
+ 
+/*公共部分结束*/
+
+ /*顶部导航栏样式*/
+/* #dt{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+ }*/
+ .adress{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    z-index: 20;
+    background-color: white;
+    display: none;
+    float: left;
+ }
+ .adress li{
+    height: 30px;
+    width: 40px;
+    float: left;
+    text-align: center;
+
+    line-height: 30px;
+
+ }
+.header {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+.content{  /*网页版心*/
+    width: 1210px;margin:0 auto;
+}
+.content .dt{
+    padding: 0 25px 0 10px;
+    position: relative;
+    font-size: 12px;
+}
+.content ul{
+	float: right;
+}
+.content li{
+	float: left;
+	list-style: none;
+	padding: 0 10px 0 10px;
+}
+.content .line{
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    margin-top: 9px;
+    padding: 0;
+}
+.header .phone-jd{
+    padding: 0 20px 0 25px;
+}
+.phone-jd .phone{
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    left: 5px;
+    top: 5px; 
+    background: url(../images/jd2015img.png) no-repeat;
+}
+/*点击登录后出现的样式*/
+#bigBox{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+#box{
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    top: 50%;
+    margin-top: -75px;
+   /* display: none;*/
+}
+#click{
+    width: 15px;
+    height: 15px;
+   /* color:white;*/
+    position: absolute;
+    top: 3px;
+    right:3px; 
+    cursor: pointer;
+    /*display: none;*/
+   
+}
+/*顶部导航栏结束*/
+/*广告部分*/
+.top-banner{
+    position: relative;
+    background-color: #FF0119;
+}
+.close-banner{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url(../images/close.png) no-repeat;
+}
+.close-banner:hover {
+    background-position: bottom;
+}
+/*广告部分结束*/
+/*搜索部分*/
+   /*logo部分*/
+.logo{
+   	width: 362px;
+    height: 60px;
+   /* background-color: red;*/
+    float: left;
+    padding: 20px 0;
+   
+ }
+ .logopir {
+    display: block;
+    width: 270px;
+    height: 60px;
+    background: url(../images/jdlogo.png) no-repeat;
+    /*隐藏京东文字*/
+    text-indent: -20000px;
+}
+ /*搜索框部分*/
+ .search{
+    width: 538px;
+    height: 35px;
+    float: left;
+    background: blue;
+    margin-top: 25px;
+}
+.search input{
+	width: 450px;
+    height: 32px;
+    border: 2px solid #B61D1D;
+    padding-left: 4px;
+    color: #666;
+    font: 14px/32px "microsoft yahei";
+    float: left;
+}
+.search button{
+	width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    font: 16px/36px "microsoft yahei";
+    color: #fff;  
+    float: left;
+    /*鼠标样式:小手*/
+    cursor: pointer;
+}
+/*购物车 S*/
+.shoppingCar{
+    position: relative;
+    width: 96px;
+    line-height: 34px;    
+    padding-left: 43px;
+    float: right;
+    border: 1px solid #DFDFDF;
+    margin: 25px 65px 0 0;
+}
+.ci-left {
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    top: 9px;
+    left: 20px;
+    background: url(../images/jd2015img.png) no-repeat 0 -58px;
+}
+.ci-right{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    font: 400 13px/13px simsun;
+}
+.ci-count{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background-color: #C81263;
+    line-height: 14px;
+    color: #fff;
+    text-align: center;
+    top: -3px;
+    /*三个圆角*/
+    border-radius: 7px 7px 7px 0;
+}
+/*购物车 E*/
+/*搜索框下的文字*/
+ .search-down{
+ 	width: 518px;
+ 	padding: 7px 0;
+ 	float: left;
+ } 
+ .search-down a{
+ 	margin-right: 10px;
+ }
+ /*logo和搜索框部分结束*/
+ /*中部导航栏部分*/
+  /*分类部分*/
+ .bottom{
+ 	height: 44px;
+    border-bottom: 2px solid #B1191A;
+ }
+ .content1{
+     width: 1210px;
+     margin:0 auto;
+ }
+ .classify{
+ 	float: left;
+ 	width: 210px;
+ 	height: 510px;
+ 	
+ }
+
+ .classify li{
+ 	list-style: none;
+ 	width: 210px;
+    height: 31.5px;
+ 	color: white;
+ 	background-color: #C81623;
+ 	text-indent: 0.8em;
+ 	line-height: 33px;
+
+
+ }
+.classify li.one{
+ 	height: 44px;
+    background-color: #B1191A;
+    line-height: 44px;
+ }
+ /*分类部分结束*/
+ /*导航栏*/
+.navitems{
+    height: 44px;
+    float: left;
+}
+.navitems li{
+    float: left;
+}
+.navitems li a{
+    padding: 0 20px;
+    font: 400 16px/44px "microsoft yahei";
+    color: #333;
+}
+.navitems li a:hover{
+    color: #C81623;
+}
+#little{
+    width: 33px;
+    height: 35px;
+    background-color: #7A6E6E;
+    /*background: url("../images/123.PNG") no-repeat;*/
+    position: fixed;
+    z-index: 2;
+    top :340px;
+    right:0px;
+}
+ .user{
+    position: absolute;
+    z-index: 4;
+}
+.tag{
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    background-color: red;
+    position: absolute;
+    top : 0px;
+    left: 0px;    /*-67*/
+    
+}
+ #little0{
+     width: 33px;
+     height: 35px;
+     background-color: #7A6E6E;
+     /*background: url("../images/123.PNG") no-repeat;*/
+     position: fixed;
+     z-index: 2;
+     top :377px;
+     right:0px;
+ }
+ #little1{
+     width: 33px;
+     height: 35px;
+     background-color: #7A6E6E;
+     /*background: url("../images/123.PNG") no-repeat;*/
+     position: fixed;
+     z-index: 2;
+     top :414px;
+     right:0px;
+ }
+ #little2{
+     width: 33px;
+     height: 35px;
+     background-color: #7A6E6E;
+     /*background: url("../images/123.PNG") no-repeat;*/
+     position: fixed;
+     z-index: 2;
+     top :451px;
+     right:0px;
+ }
