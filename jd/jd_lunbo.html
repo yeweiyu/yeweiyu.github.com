@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <style>
+        *{margin:0;padding:0;}
+        ul,ol{list-style:none;
+             
+        }
+        .box {
+            width: 730px;
+            height: 454px;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid orange;
+        }
+        .circle {
+            position: absolute;
+            left: 50%;
+            margin-left:-50px;
+            bottom:10px;
+            /*background-color: red;
+            width: 200px;
+            height: 300px;*/
+        }
+        ul{
+        	width: 800%;
+        	position: absolute;
+        	left: -730px;
+        }
+         ul li{
+         	float: left;
+         }
+        .circle .onm {
+            float: left;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;  /*设置圆角*/
+            background-color: pink;
+            text-align: center;
+            line-height: 18px;
+            margin-right: 10px;
+            cursor: pointer;  /*设置小手*/
+        }
+        #arr{
+    	height: 30px;
+    	width: 100%;
+    	display: none;
+    	position: absolute;
+    	top: 50%;
+    	margin-top: -15px;
+    	
+
+    }
+     #arr .spc{
+    	display: inline-block;
+    	width: 30px;
+    	line-height: 30px;
+    	text-align: center;
+    	font-size: 20px;
+    	cursor:pointer; 
+    	position: absolute;
+    	color: white;
+    	opacity: 0.3;
+    	background-color: black;
+    }
+    span#rigth{
+    	right: 0;
+    }
+        /*.circle span.current {
+            background-color: purple;
+        }*/
+    </style>
+    
+    <script type="text/javascript">
+    
+    window.onload = function(){
+       
+       //想办法获得图片的个数
+      var scroll =  document.getElementById("scroll");
+      //创建一个新的盒子
+      var left =  document.getElementById("left");
+      var rigth =  document.getElementById("rigth");
+      var circle = scroll.children[1];
+//    var circle = document.createElement("div")[0];
+//    circle.className = "circle";   更改类名
+//    circle.setAttribute("class","circle");
+      
+//    scroll.appendChild(circle);//给scroll添加孩子
+      
+      //先获取ul
+      var ul = document.getElementById("ul");
+      
+//    var lis = ul.children //获取ul下面所有的元素节点       //children 代表元素节点
+      
+//    alert(lis.length);
+      
+      //向大盒子里面添加N个小的span标签
+      //数组的length永远比它的下标大一
+      
+      var spas = circle.children;
+//    for(var i = 0; i<spas.length;i++){
+//    spas[i].index = i;
+//    	spas[i].onmouseover = function(){
+//    		for(var i = 0; i<spas.length;i++){
+//    	    lis[i].style.display = "none";
+//    	    spas[i].style.backgroundColor = "pink";
+//        }
+//    		this.style.backgroundColor = "red";
+//    	  lis[this.index].style.display = "block";
+//    	}
+//    	  
+//    }
+      
+  	   var target = -730; var leaber = -730; var timer = null;
+  	   var time = null;
+  	   var tim = null;
+  	   var inde = 0;
+  	   
+//	   
+    	left.onclick = function(){
+            target = target - 730;
+			clearInterval(tim);
+			if(target<=-5110 || target<=-730){
+		tim = setInterval(function(){
+//			 
+////				
+//			
+           leaber = leaber + (target - leaber)/10;
+////            leaber = leaber>0 ? Math.ceil(leaber) : Math.floor(leaber);
+                ul.style.left = leaber + "px";
+			
+			
+//         
+           if(parseInt(ul.style.left)<=-5110){
+           	    target = -730;
+		        leaber = -730;
+////		     alert("12")
+           	    ul.style.left = -730 + "px";
+           }
+           inde = -(target/730)-1;
+//			
+				for(var i = 0; i <spas.length;i++){
+				spas[i].style.backgroundColor = "pink";
+			}
+				
+				spas[inde].style.backgroundColor ="red";
+		   },30);
+		        
+                
+	 }
+			
+//
+		}
+		rigth.onclick = function(){
+			    target = target + 730;
+			    clearInterval(tim);
+		if(target>=-4380 || target>=-730){
+		    tim = setInterval(function(){
+////			
+//			
+                leaber = leaber + (target - leaber)/10;
+//              leaber = leaber>0 ? Math.ceil(leaber) : Math.floor(leaber);
+                ul.style.left = leaber + "px";
+			
+			
+           if(parseInt(ul.style.left)>=0){
+           	    target = -4380;
+		        leaber = -4380;
+////		      alert("1")
+           	    ul.style.left = -4380 + "px";
+                }
+                inde = -(target/730)-1;
+			
+				for(var i = 0; i <spas.length;i++){
+				spas[i].style.backgroundColor = "pink";
+			    }
+				
+				spas[inde].style.backgroundColor ="red";
+		},30);
+		
+			
+
+	     }
+     
+	}
+		
+  	   
+  	   
+  	   
+  	   
+  	   timer = setInterval(fun,2000);
+  	   function fun(){
+  	   	    inde++;
+  	   	    
+	   	    clearInterval(time);
+  	   	if(inde==spas.length){
+  	   		inde =0;
+  	   	}
+  	   	    target= target - 730;
+  	   	
+  	   	
+  	   	if(Math.abs(parseInt(target))<5110){
+  	   	        time = setInterval(get,30);
+  	   	function get(){
+	   		
+	   		    leaber = leaber + (target - leaber)/10;
+	   		    leaber = leaber>0 ? Math.ceil(leaber) : Math.floor(leaber);
+	   		
+	     	    ul.style.left = leaber + "px";
+	     	    
+	    if(Math.abs(parseInt(ul.style.left))==4380){
+	     		
+                target = 0;
+                leaber =0;
+                ul.style.left = 0 + "px";
+          
+	    }
+	    if(target == leaber){
+	    
+	     		clearInterval(time);
+	    }
+	    for(var i =0;i<spas.length;i++){
+	   		    spas[i].style.backgroundColor = "";
+	   	}
+
+	   	        spas[inde].style.backgroundColor ="red";
+  	   	}
+	     	if(target == leaber){
+	     		clearInterval(time);
+	    }
+  	   	
+  	  }
+  	   	
+	
+  	   }
+	   scroll.onmouseover = function(){
+	   	    arr.style.display ="block";
+	     	clearInterval(timer);
+//	     	clearInterval(time);
+	   }
+	   scroll.onmouseout = function(){
+	   	    arr.style.display ="none";
+	        timer = setInterval(fun,2000);
+//	        time = setInterval(get,30);
+	   }
+	   for(var i = 0;i<spas.length;i++){
+	   	spas[i].index =i;
+	   	spas[i].onmouseover = function(){
+	   		for(var i = 0;i<spas.length;i++){
+	   		spas[i].style.backgroundColor ="";
+	   		}
+	   	    this.style.backgroundColor ="red";
+	   	    leaber = target = -(this.index +1)*730;
+	   	    ul.style.left=target + "px";
+	   	}
+	   	spas[i].onmouseout = function(){
+	   		leaber= target;
+//	   		ul.style.left=target + "px";
+	   		inde =this.index;
+	   	}
+	   }
+      
+//    var  circle.children;
+      
+      
+      
+      
+      
+      
+      
+    }  	
+    	
+    </script>
+    
+   
+	</head>
+	<body>
+		
+<div class="box" id="scroll">
+    <div class="slider">
+        <ul id="ul">
+        	<li><img src="6.jpg" alt=""/></li>
+            <li><img src="1.jpg" alt=""/></li>
+            <li><img src="2.jpg" alt=""/></li>
+            <li><img src="3.jpg" alt=""/></li>
+            <li><img src="4.jpg" alt=""/></li>
+            <li><img src="5.jpg" alt=""/></li>
+            <li><img src="6.jpg" alt=""/></li>
+            <li><img src="1.jpg" alt=""/></li>
+            
+        </ul>
+        <div id="arr"><span id="left" class="spc"><</span><span id="rigth" class="spc">></span></div>
+    </div>
+    <div class="circle">
+        <span class="onm" style=" background-color: red;">1</span>
+        <span class="onm">2</span>
+        <span class="onm">3</span>
+        <span class="onm">4</span>
+        <span class="onm">5</span>
+        <span class="onm">6</span>
+        
+    
+    </div>
+</div>
+	</body>
+</html>
