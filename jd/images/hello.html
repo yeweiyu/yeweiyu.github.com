@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*<!-- 请登录弹出页面 -->*/
+		div.hello1{
+			width: 100%;
+			height: 800px;
+			/*background-color: blue;*/
+		}
+		.hello11{
+			width: 1000px;
+			height: 80px;
+			margin: 0 auto;
+		}
+		.hello12{
+			float: left;
+			margin-top: 20px;
+		}
+
+		.hello2{
+			width: 100%;
+			height: 478px;
+			background-color: #E93854;
+		}
+		.hello22{
+			width: 1000px;
+			height:478px;
+			margin: 0 auto;
+			background: url(hello.png) no-repeat;
+		}
+		.hello23{
+			width: 350px;
+			height: 400px;
+			float: right;
+			margin-top: 30px;
+			background-color: white;
+		}
+
+		.hello3{
+			width: 100%;
+			height: 100px;
+			position: relative;
+			/*background-color: pink;*/
+		}
+		.hello33{
+			width: 1000px;
+			height: 100px;
+			margin: 0 auto;
+			/*background-color: green;*/
+		}
+
+		.hello34{
+			width: 160px;
+			height: 40px;
+			float: right;
+			color: gray;
+			margin-top: 10px;
+
+		}
+
+		.hello35{
+			width: 800px;
+			height: 40px;
+			float: left;
+			margin-bottom: 0px;
+			margin-left: 100px;
+		}
+		a{
+			font: 12px 宋体;
+			color: black;
+			text-decoration: none;
+
+		}
+
+		.one{
+			width: 350px;
+			height: 50px;
+			border-bottom: 1px solid #F2F2F2; 
+			/*background-color: pink;*/
+		}
+		.two{
+			width: 350px;
+			height: 280px;
+			position: relative;
+		}
+		.three{
+			width: 350px;
+			height: 70px;
+			background-color: #FCFCFC;
+		}
+
+		.one a.one1{
+			display: inline-block;
+			font: 22px 微软雅黑;
+			color: gray;
+			float: left;
+			margin-left: 40px;
+			line-height: 50px;
+		}
+		.one a.one1:hover{
+			color: red;
+		}
+		.one a.one2{
+			font: 22px 微软雅黑;
+			color: red;
+			display: inline-block;
+			float: right;
+			margin-right: 40px;
+			line-height: 50px;
+		}
+
+
+		.two div.two1{
+			width: 300px;
+			height: 30px;
+			font: 12px 宋体;
+			color: gray;
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			margin-left: -150px;
+			background-color: #FFF6D2;
+		}
+		.two div.two1 .two11{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			/*background-color: blue;*/
+			background: url(bj.png) no-repeat -98px -22px;
+		}
+		.two div.two1 span{
+			display: inline-block;
+			margin-left: 40px; 
+			line-height: 30px;
+		}
+		.two .aa{
+			display: inline-block;
+			width: 300px;
+			height: 40px;
+			outline-style: none;
+			border: 1px solid gray;
+			position: absolute;
+			top: 50px;
+			left: 25px;
+		}
+		.two .bb{
+			display: inline-block;
+			width: 300px;
+			height: 40px;
+			outline-style: none;
+			border: 1px solid gray;
+			position: absolute;
+			top: 110px;
+			left: 25px;
+		}
+
+		.cc{
+			/*display: inline-block;*/
+			position: absolute;
+			top: 180px;
+			left: 25px;
+		}
+		.dd{
+			position: absolute;
+			top: 180px;
+			right: 25px;
+		}
+
+		.ee{
+			width: 300px;
+			height: 40px;
+			background-color: #E4393C;
+			position: absolute;
+			outline-style: none;
+			border: none;
+			bottom: 20px;
+			left: 25px;
+		}
+
+		.three1{
+			width: 220px;
+			height: 50px;
+			text-align: center;
+			float: left;
+			margin-top: 10px;
+		}
+		.three1 a{
+			line-height: 50px;
+		}
+		.three2{
+			width: 60px;
+			height: 30px;	
+			float: right;
+			margin-top: 20px;
+			margin-right: 25px;	
+		}
+		.ff{
+			font: 14px 宋体;
+			color: red;
+			line-height: 30px;
+		}
+		.hello36{
+			width: 18px;
+			height: 14px;
+			position: absolute;
+			top: 14px;
+			right: 454px;
+		}
+		.box{
+			width: 350px;
+			height: 350px;
+			background-color: white;
+			position:  absolute;
+			display: none;
+		}
+		
+
+		.box2{
+			width: 340px;
+			height: 60px;
+			position: absolute;
+			left: 20px;
+			bottom: 0px;			
+		}
+		.box21{
+			font: 16px 宋体;
+
+		}
+		.box21:hover{
+			color: red;
+		}
+
+		.box3{
+			width: 320px;
+			height: 147px;
+			position: absolute;
+			top: 70px;
+			right: 15px;
+			/*background-color: red;*/
+			/*display: none;*/
+		}
+		.box1{
+			width: 147px;
+			height: 147px;
+			background: url(二维码.bmp);
+			position: absolute;
+			left: 50%;
+			margin-left: -73.5px;
+		    display : block;
+		}
+		.box31{
+			width: 147px;
+			height: 147px;
+			float: left;
+			background: url(二维码.bmp);*/
+			border: none;
+			display: none;
+		}
+		.box32{
+			width: 147px;
+			height: 147px;
+			float: right;
+			background: url(手机.png);
+			border: none;
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 请登录弹出页面 -->
+	<div class="hello1">
+		<div class="hello11">
+			<div class="hello12"> <img src="jd.png"> </div>		
+		</div>
+		<div class="hello2">
+			<div class="hello22"> 
+				<div class="hello23">
+					<div class="one">
+						<a href="#" class="one1" id="sm">扫码登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+						<a href="#" class="one2" id="zh">账户登录</a>
+					</div>
+					<div class="two">
+						<div class="two1">
+						 	<div class="two11"></div>
+							<span> 公共场所不建议自动登录，以防账号丢失 </span>
+						</div>
+					
+						<input type="text" value="邮箱/用户名/已验证手机" onfocus="this.value=''" onblur="this.value='邮箱/用户名/已验证手机'" class="aa">
+						<input type="text" value="密码" onfocus="this.value=''" onblur="this.value''" class="bb" >
+
+						<div class="cc"> <input type="radio"> 自动登录 </div>
+						<div class="dd"> 
+							<a href="#" style=" font-size: 16px;"> 忘记密码 </a> 
+						</div>
+
+						<input type="submit" value="登 &nbsp;&nbsp;&nbsp;录" class="ee" style=" font: 24px 微软雅黑;
+						color: white; " >
+
+						<div class="box" id="box">
+						   <!-- <div class="box1" id="box1"> </div> -->
+						   <div class="box2">  
+							<a href="http://app.jd.com/" class="box21"> 打开新版<font color="red"> 手机京东</font>扫描二维码 | </a>
+							<a href="http://help.jd.com/user/issue/353-1096.html" class="box21">使用帮助</a>
+						   </div>
+						<div class="box3" id="box3">
+						    <div class="box1" id="box1"> </div>
+							<div class="box31" id="box31"></div>
+							<div class="box32" id="box32"></div>
+							<!-- <img src="二维码.bmp">
+							<img src="手机.png"> -->
+						</div>
+					</div>
+
+					</div>
+					<div class="three">
+						<div class="three1">
+							<a href="#">京东钱包&nbsp;&nbsp;|</a>
+							<a href="#">QQ&nbsp;&nbsp;|</a>
+							<a href="#">微信</a>
+						</div>
+						<div class="three2"> <a href="#" class="ff" > 立即登录 </a> </div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div class="hello3">
+			<div class="hello33">				
+				<div class="hello34"> 
+					<a href="#" style=" color: gray; "> 登陆页面，问卷调查 </a> 
+				</div>
+				<div class="hello35">
+					<a href="#">关于我们 | </a>
+					<a href="#">联系我们 | </a>
+					<a href="#">人才招聘 | </a>
+					<a href="#">商家入驻 | </a>
+					<a href="#">广告服务 | </a>
+					<a href="#">手机京东 | </a>
+					<a href="#">友情链接 | </a>
+					<a href="#">友情链接 | </a>
+					<a href="#">销售联盟 | </a>
+					<a href="#">京东社区 | </a>
+					<a href="#">京东公益 | </a>
+					<a href="#">English Site </a>
+				</div>
+				<div class="hello36"> <img src="xiaotubiao.png"> </div>
+			</div>		
+		</div>
+	</div>
+
+	<script>
+		var box1 = document.getElementById("box1");
+		var box3 = document.getElementById("box3");
+		var box31 = document.getElementById("box31");
+        var box32 = document.getElementById("box32");
+		box3.onmouseover = function(){
+			box31.style.display = "block";
+			box32.style.display = "block";
+            box1.style.display = "none";
+			box3.onmouseout = function(){
+			box31.style.display = "none";
+			box32.style.display = "none";
+            box1.style.display = "block"; 
+			
+			}						
+
+	          }
+			
+		
+
+	</script>
+
+	<script>
+		var sm = document.getElementById("sm");
+		var zh = document.getElementById("zh");
+		var box = document.getElementById("box");
+
+		sm.onclick = function(){
+			box.style.display = "block";
+		}
+
+		zh.onclick = function(){
+			box.style.display = "none";
+		}
+	</script>
+
+	
+
+	
+
+</body>
+</html>
