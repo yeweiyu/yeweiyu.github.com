@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东商城</title>
+	<meta charset="utf-8">
+	   <!--包含公共样式 清除浮动 顶部导航 底部样式-->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	   <!--中间部分样式-->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="move2.js"></script>
+    <script src="demo.js" type="text/javascript"></script>
+    <script src="register.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+   <!--//旁边的小东西-->
+   <div id="little">
+       <img src="images/123.PNG"  id="user" class="user">
+       <div id="tag" class="tag">
+           <span style="margin-left:10px;color: white;">京东会员</span>
+       </div>
+   </div>
+   <div id="little0">
+       <img src="images/124.PNG"  id="user0" class="user">
+       <div id="tag0" class="tag">
+           <span style="margin-left:10px;color: white;">京东会员</span>
+       </div>
+   </div>
+   <div id="little1">
+       <img src="images/125.PNG"  id="user1" class="user">
+       <div id="tag1" class="tag">
+           <span style="margin-left:10px;color: white;">京东会员</span>
+       </div>
+   </div>
+   <div id="little2">
+       <img src="images/126.PNG"  id="user2" class="user">
+       <div id="tag2" class="tag">
+           <span style="margin-left:10px;color: white;">京东会员</span>
+       </div>
+   </div>
+
+  <!-- 点击登录后出现的页面 -->
+
+    <div id="bigBox">
+      <div id="box"><span id="click">x</span></div>
+     
+      </div>
+    <!-- 顶部导航栏开始 -->
+    <div class="header">
+    	<div class="content">
+    	   <div class="fl">
+    		  <div class="dt" id="dt">
+                   <p>送至: <span id="he">北京</span></p>
+            <ul class="adress" id="adress">
+                     <li><a href="#">深圳</a></li>
+                     <li><a href="#">天津</a></li>
+                     <li><a href="#">重庆</a></li>
+                     <li><a href="#">河北</a></li>
+                     <li><a href="#">北京</a></li>
+                     <li><a href="#">上海</a></li>
+                     <li><a href="#">深圳</a></li>
+                     <li><a href="#">天津</a></li>
+                     <li><a href="#">重庆</a></li>
+                     <li><a href="#">河北</a></li>
+                     <li><a href="#">北京</a></li>
+                     <li><a href="#">上海</a></li>
+                     <li><a href="#">深圳</a></li>
+                     <li><a href="#">天津</a></li>
+                     <li><a href="#">重庆</a></li>
+                     <li><a href="#">河北</a></li>
+                     <li><a href="#">北京</a></li>
+                     <li><a href="#">上海</a></li>
+                     <li><a href="#">深圳</a></li>
+                     <li><a href="#">天津</a></li>
+                     <li><a href="#">重庆</a></li>
+                     <li><a href="#">河北</a></li>
+            </ul>    
+            <script>
+               var dt = document.getElementById("dt");
+               var adress =document.getElementById("adress");
+               var he = adress.getElementsByTagName("li");
+               var text = document.getElementById("he")
+              // alert(he.length);
+                 dt.onmouseover = function(){
+                      dt.style.backgroundColor = "white";
+                      adress.style.display = "block";
+                 }
+                 dt.onmouseout = function(){
+                  adress.style.display = "none";
+                  dt.style.backgroundColor = "";
+                 }
+                for(let i=0;i< he.length;i++){
+                   he[i].onclick = function(){
+                          var test1 = he[i].innerText;
+                          text.innerHTML = test1;
+                          return false;
+                   }
+                }
+            </script>  
+
+              </div>
+            </div>
+              <ul>
+                   <li >
+                       <a href="hello.html" id="login">你好，请登录</a>&nbsp;&nbsp;
+                       <a href="#" class="col-red">免费注册</a>
+                       <script>
+                          var bigBox = document.getElementById("bigBox");
+                          var login = document.getElementById("login");
+                          var click = document.getElementById("click");
+                          login.onclick = function(){
+                              bigBox.style.display = "block";
+                          }
+                          click.onclick = function(){
+                            bigBox.style.display = "none";
+                          }
+                       </script>
+                   </li>
+                   <li class="line"></li>
+                   <li>我的订单</li>
+                   <li class="line"></li>                   
+                   <li class="dt">
+                       我的京东
+                     <!--   <i><s>◇</s></i> -->
+                   </li>
+                   <li class="line"></li> 
+                   <li>
+                       京东会员
+                   </li>
+                   <li class="line"></li> 
+                   <li>企业采购</li>
+                   <li class="line"></li> 
+                   <li class="dt phone-jd">
+                       <i class="phone"></i>
+                       手机京东
+                      <!--  <i><s>◇</s></i> -->
+                    </li>
+                   <li class="line"></li> 
+                   <li class="dt">
+                       关注京东
+                     <!--   <i><s>◇</s></i> -->
+                    </li>
+                   <li class="line"></li> 
+                   <li class="dt">
+                       客户服务
+                      <!--  <i><s>◇</s></i> -->
+                    </li>
+                   <li class="line"></li> 
+                   <li class="dt">
+                       网站导航
+                      <!--  <i><s>◇</s></i> -->
+                    </li> 
+               </ul>
+    	</div>
+    </div>
+    <!-- 顶部导航栏结束 -->
+    <!-- 广告部分开始 -->
+    <div class="top-banner">
+    	<div class="content" style="position:relative;" id="topImages">
+        	<a href="#">
+            	<img src="images/topimg.jpg" alt="" >
+        	</a>
+       	    <a href="#" class="close-banner" id="close">
+            </a>
+       </div>
+   <script type="text/javascript">
+     var topImages = document.getElementById("topImages");
+     var closeBanner = document.getElementById("close");
+          closeBanner.onclick = function() {
+              topImages.style.display = "none";
+          }
+   </script>
+    </div>
+    <!-- 广告部分结束 -->
+    <!-- logo和搜索框部分 -->
+    <div class="content clearfix">
+       <div class="logo">
+         <a href="#" class="logopir">京东</a>
+       </div>
+       <div class="search">
+       	 <input type="text" name="" value="三体" id="oInput">
+       	 <button>搜索</button>
+       </div>
+       <div class="shoppingCar">
+       	    <a href="#">我的购物车</a>
+            <i class="ci-left"></i>
+            <i class="ci-right">></i>
+            <i class="ci-count">0</i>
+       </div>
+       <div class="search-down">
+            <a href="#" class="col-red">演唱会票</a>
+            <a href="#">低至9.9</a>
+            <a href="#">买3免1</a>
+            <a href="#">199减100</a>
+            <a href="#">买4免1</a>
+            <a href="#">甲醛检测</a>
+            <a href="#">党徽</a>
+            <a href="#">0元试用</a>
+            <a href="#">爱的教育</a>
+       </div>  
+    	
+    </div>
+    <!-- logo和搜索框部分结束 -->
+    <!-- 中部导航栏 -->
+    <div class="bottom">
+      <div class="content1">
+      	<div class="classify">
+      		<ul>
+      		    <li class="one"><h3>全部商品分类</h3></li>
+      	    	<li><h3>家用电器</h3></li>
+      			<li><h3>手机、数码、京东通信</h3></li>
+      			<li><h3>电脑、办公</h3></li>
+      			<li><h3>家居、家具、家装、厨具></h3></li>
+      			<li><h3>男装、女装、童装、内衣></h3></li>
+      			<li><h3>个护化妆、清洁用品、宠物></h3></li>
+      			<li><h3>鞋靴、箱包、珠宝、奢侈品></h3></li>
+      			<li><h3>运动户外、钟表></h3></li>
+      			<li><h3>汽车、汽车用品></h3></li>
+      			<li><h3>母婴、玩具乐器></h3></li>
+      			<li><h3>食品、酒类、生鲜、特产></h3></li>
+      			<li><h3>医药保健></h3></li>
+      			<li><h3>图书、音像、电子书></h3></li>
+      			<li><h3>彩票、旅行、充值、票务></h3></li>
+      			<li><h3>理财、众筹、白条、保险></h3></li>
+      		</ul>
+      	</div>
+      	 <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">京东超市</a></li>
+                    <li><a href="#">生鲜</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">金融</a></li>
+                </ul>
+        </div>
+    </div>
+   </div>
+   <!-- 中部导航栏结束 -->
+    <!-- 背景图片 -->
+    <div class="banner">
+        <a href="#">
+        </a>
+    </div>
+    <!-- 背景结束 -->
+    <!-- 商品内容部分开始 -->
+    <div class="content box">
+      <!-- 图片循环显示 -->
+    	<div class="regular" id="box2">
+    	 <img src="images/center.jpg" alt="" class="top" id="first">
+        <ul class="slider-nav">
+                <li id="first0" style="background-color: #B61B1F">1</li>
+                <li id="first1">2</li>
+                <li id="first2">3</li>
+                <li id="first3">4</li>
+                <li id="first4">5</li>
+                <li id="first5">6</li>
+        </ul>
+        <script>
+    
+
+        </script>
+       <div class="left"><button id="pre" style="background-image:url(images/left.png) "></button></div>
+       <div class="right"><button id="next" style="background-image:url(images/right.png)"></button></div>
+    	</div>
+      <!-- 图片循环显示结束 -->
+    	<div class="news">
+    		<div class="dt">
+                 <h2>京东快报</h2>
+                 <div class="more">
+                        <a href="#">更多  ></a>
+                 </div>
+    		</div>
+    		<div class="news-bottom">
+                 <ul>
+                      <li><a href="#"><span>[特惠]</span>暑期钜惠低至5折,再送旅行包</a></li>
+                      <li><a href="#"><span>[公告]</span>京东·无锡馆正式启动</a></li>
+                      <li><a href="#"><span>[特惠]</span>家电69元秒杀，落地扇0元白拿</a></li>
+                      <li><a href="#"><span>[公告]</span>阅读指数帮您选好书好碟</a></li>
+                      <li><a href="#"><span>[特惠]</span><京东Game+雪碧真英雄争霸赛</a></li>
+                 </ul>
+            </div>
+            <div class="icon">
+                <ul>
+                  <li><a href="#"><img src="images/life.png"><span>话费</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>机票</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>电影票</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>游戏</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>彩票</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>团购</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>酒店</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>火车票</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>众筹</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>理财</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>礼品卡</span></a></li>
+                  <li><a href="#"><img src="images/life.png"><span>白条</span></a></li>
+                </ul>
+            </div>
+           <div>
+           	<a href=""><img src="images/rightPic.jpg" alt=""></a>
+           </div>
+    	</div>
+      <div class="box_bottom">
+          <a href=""><img src="images/t-left.jpg"></a>
+       <ul>
+        <!-- <li><a href=""><img src="images/t-left.jpg"></a></li> -->
+        <li ><a href=""><img src="images/1.jpg"></a></li>
+      	<li><a href=""><img src="images/2.jpg"></a></li>
+      	<li><a href=""><img src="images/3.jpg"></a></li>
+      	<li class="one"><a href=""><img src="images/4.jpg"></a></li>
+       </ul>
+      </div>
+    </div>
+    <!-- 商品内容结束 -->
+    <!-- 底部部分 -->
+    <div class="footer">
+     <div class="footer_top">
+     	<img src="images/a.png">
+     	<img src="images/b.png">
+     	<img src="images/c.png">
+     	<img src="images/d.png">
+     </div>
+      <div class="content">
+         <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>会员介绍</dd>
+                    <dd>生活旅行/团购</dd>
+                    <dd>常见问题</dd>
+                    <dd>大家电</dd>
+                    <dd>联系客服</dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>上门自提</dd>
+                    <dd>211限时达</dd>
+                    <dd>配送服务查询</dd>
+                    <dd>配送费收取标准</dd>
+                    <dd>海外配送</dd>
+                </dl> 
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>货到付款</dd>
+                    <dd>在线支付</dd>
+                    <dd>分期付款</dd>
+                    <dd>邮局汇款</dd>
+                    <dd>公司转账</dd>
+                </dl>   
+                 <dl>
+                    <dt>售后服务</dt>
+                    <dd>售后政策</dd>
+                    <dd>价格保护</dd>
+                    <dd>退款说明</dd>
+                    <dd>返修/退换货</dd>
+                    <dd>取消订单</dd>
+                </dl>   
+                 <dl >
+                    <dt>特色服务</dt>
+                    <dd>夺宝岛</dd>
+                    <dd>DIY装机</dd>
+                    <dd>延保服务</dd>
+                    <dd>京东通信</dd>
+                    <dd>京东JD+</dd>
+                </dl>  
+                <dl class="one">
+                  <dt>京东自营覆盖县</dt>
+                  <dd>京东已向全国2642个区县提供自营</dd>
+                  <dd>配送服务，支持货到付款、POS机</dd>
+                  <dd>刷卡和售后上门服务。</dd>
+                  <dd><a href="#">查看详情></a></dd>
+                </dl>
+      </div>
+    </div>
+    <!-- 底部部分结束 -->
+    <script type="text/javascript" src="regular.js"></script>
+</body>
+</html>
