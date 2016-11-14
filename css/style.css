@@ -3,7 +3,7 @@
 
 html,body,ul,li,ol,p,dl,dt,dd,h1,h2,h3,h4,h5,h6,input,form{margin:0px;padding:0px;}
 
-body{margin:0 auto;font-size:12px;font-family:"Arial";height:auto; background: url(../images/bagd.jpg) no-repeat 100% 100%;background-size: 100%;}
+body{margin:0 auto;font-size:12px;font-family:"Arial";height:auto; background: url(../images/bagd.jpg) no-repeat 100% 100%;background-size: 100% 100%;}
 html{overflow-x:hidden;}
 
 div{margin:0px auto;}
