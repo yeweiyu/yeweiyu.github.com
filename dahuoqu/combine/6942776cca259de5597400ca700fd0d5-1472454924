@@ -1,0 +1,92 @@
+$(document).ready(function(){
+    //我的搭伙
+    $(".floatCtro-login").hover(function(){
+        $(this).find(".sun").stop(true).show().animate({"left":"-349px"},300);
+    },function(){
+        $(this).find(".sun").stop(true).hide().animate({"left":"-359px"},300);
+    });
+    //我的收藏
+    $(".parent").hover(function(){
+        $(this).find(".sun").stop(true).show().animate({"left":"-85px"},300);
+    },function(){
+        $(this).find(".sun").stop(true).hide().animate({"left":"-95px"},300);
+    });
+    //对比
+    $(".floatCtro-contrast").hover(function(){
+        $(this).find(".sun").stop(true).show().animate({"left":"-221px"},300);
+    },function(){
+        $(this).find(".sun").stop(true).hide().animate({"left":"-231px"},300);
+    });
+    //二维码
+    $(".floatCtro-ewm").hover(function(){
+        $(this).find(".sun").stop(true).show().animate({"left":"-221px"},300);
+    },function(){
+        $(this).find(".sun").stop(true).hide().animate({"left":"-231px"},300);
+    });
+    //返回顶部
+    $(".floatCtro-return").hover(function(){
+        $(this).find(".sun").stop(true).show().animate({"left":"-85px"},300);
+    },function(){
+        $(this).find(".sun").stop(true).hide().animate({"left":"-95px"},300);
+    });
+    $(".floatCtro-return").click(function(){
+        $('body,html').animate({scrollTop:0},600);
+        return false;
+    });
+    //删除对比
+    var compareEl=$("#shopCart");
+    compareEl.on('click','.contrast-box-li a',function () {
+        $(this).parent().remove();
+        var length=$(".contrast-box-li").length;
+        $(".vv").html(length);
+        if(length<=0){
+            $(".floatCtro-contrast i").removeClass("has");
+            $(".add-1").hide();
+        }
+    });
+    $('.contrast_a').bind("click",function(event){
+        event.stopImmediatePropagation();//  阻止事件冒泡
+        // var reqData=eval("({"+$(this).data('requestData')+"})");
+        // console.log(reqData);
+        // //添加商品标题到对比列表
+        // $('.contrast-box-bottom').before(
+        //     "<dd class='contrast-box-li'><div class='box-li-c'>"+
+        //     $(this).prev().find('p:first').text()
+        //     +"</div><a></a></dd>"
+        // );
+        // $(".show_num").text($("#shopCart .contrast-box-li").length);
+        $(this).request();
+        return false;
+    });
+    // $(".contrast_a").on("click", function(){
+        // var length=$(".contrast-box-li").length;
+        // var Content=$(this).parent().find("p").eq(0).text();
+        // $(".add-1").show();
+        // if(length<5){
+        //     //$(".add-1").delay(800).show(300).delay(1000).hide(200);
+        //     $(".contrast-box-bottom").before($("<dd class='contrast-box-li'><div class='box-li-c'></div><a></a></dd>"));
+        //     $(".box-li-c").html(Content);
+        // }else {
+        //     alert("已有五个对比产品！");
+        // }
+        // $(".vv").html($(".contrast-box-li").length);
+        // $(".floatCtro-contrast i").addClass("has");
+
+    // })
+
+
+    $(".f-login input").focus(function(){
+        $(this).css("border-color","#0099ff");
+    })
+    $(".f-login input").blur(function(){
+        $(this).css("border-color","#ddd");
+    })
+
+
+
+
+
+
+
+
+})

@@ -1,0 +1,11 @@
+/*订单查询*/
+.inquiry{margin: 70px 150px 0;border: 2px solid #ffe7ae; }
+.inquiry_div{font-size: 16px;color: #666;font-weight: bold;margin: 20px  0 0 46px}
+.inquiry_ct{margin: 100px 214px 170px}
+.inquiry_ct div{margin-bottom: 10px}
+.inquiry_ct div input{margin-left: 40px;;width: 240px;height: 40px;border: 1px solid #dedede;line-height: 40px;padding-left: 10px;margin-right: 10px}
+.inquiry_ct div a{display: inline-block;width: 100px;height: 40px;border: 1px solid #dedede;text-align: center;line-height: 40px;cursor: pointer}
+.inquiry_ct div .order_a{font-size: 20px;color: #fff;
+    background: #3ea3ff;display: inline-block;width: 150px;height: 46px;text-align: center;line-height: 46px;margin-left: 86px;border-radius: 5px;margin-top: 10px;border: none}
+.inquiry_ct div .order_a:hover{background: #0085ff  }
+/*订单查询 end*/

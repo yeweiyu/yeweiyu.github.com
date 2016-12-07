@@ -1,0 +1,117 @@
+
+/*选择*/
+.bodyCon08 .students{margin:0 auto;width:1100px;height:480px;position:relative;}
+.bodyCon08 .students p.PP{width:510px;height:50px;font-size:16px;color:#333;text-align:center;position:absolute;top:60px; left:300px;}
+#four_flash{position:relative;width:1200px;height:150px; margin:20px auto 10px;}
+#four_flash .flashBg{width:1200px;height:150px; margin:0 auto;position:relative;overflow:hidden;}
+#four_flash .flashBg ul.mobile{height:150px; position:absolute; left:0;}
+#four_flash .flashBg ul.mobile li{float:left;width:160px;height:150px;position: relative;overflow: hidden;margin: 0 6px}
+#four_flash .flashBg ul.mobile li a{width: 100%;height: 100%}
+#four_flash .but_left{    width: 27px;
+    height: 55px;
+    position: absolute;
+    top: 54px;
+    left: 6px;cursor: pointer;background-image: url("../themes/dhq/assets/picture/right1.png");display: none}
+#four_flash:hover  .but_left{display: block}
+#four_flash .but_right{    width: 26px;
+    height: 55px;
+    position: absolute;
+    top: 54px;
+    right: 2px;cursor: pointer;background-image:url("../themes/dhq/assets/picture/left1.png");display: none }
+#four_flash:hover  .but_right{display: block}
+.ix_optic{position: absolute;width: 100%;height: 150px;bottom: 0;left: 0;display: none}
+.optic{width: 100%;height: 100%;background: #fff; filter: alpha(opacity=65);
+    -moz-opacity: 0.65;
+    opacity: 0.65;}
+.ix_oc_ct{position: absolute;    right: 20px;
+    top: 20px;color: #fff}
+.ix_optic img{left: 60px;  top: 60px;display: none}
+.mobile li:hover .ix_optic{display: block;}
+.mobile  li:hover .ix_optic .hover_img{display: block}
+.curt .ix_optic{display: block}
+.curt .ix_optic .click_img{display: block}
+/*选择 end*/
+/*目的地*/
+.whither{padding-top: 20px;padding-left: 20px;width: 1178px;height: 320px;border: 1px solid #eee;margin-top: 20px;}
+.whither_one{width: 870px;height: 268px}
+.whither_three{overflow: hidden}
+.whither_two{padding-left: 10px;padding-top: 14px;height: 254px}
+.whither_two div{font-size: 20px;font-weight: bold;margin-bottom: 20px}
+.whither_two p i{display: inline-block;width: 8px;height: 10px;background-image:url("../themes/dhq/assets/picture/drop.png");    top: 6px; }
+.whither_two p span{margin-left: 15px;color: #666}
+.whither_two p{margin-bottom: 5px}
+.whither_two a{display: inline-block;font-size: 16px;color: #fff;background: #3ea3ff;width: 124px;height: 44px;line-height: 44px;;text-align: center;bottom: 0;left: 18px;border-radius: 5px;cursor: pointer}
+.whither_two a:hover{background: #0085ff  }
+.whither_three a{display: inline-block;padding: 16px 34px;cursor: pointer}
+.whither_three .curt_a{color: #3ea3ff;border: 1px solid #eee;border-bottom: none;background: #fbfafa}
+.whither_three span{display: inline-block;padding: 15px 34px;font-weight: bold;color: #666}
+.left_div{  width: 27px;
+    height: 55px;
+    position: absolute;
+    top: 76px;
+    left: 0;cursor: pointer;background-image: url("../themes/dhq/assets/picture/right1.png");display: none}
+.contrast_price:hover .left_div{display: block}
+.right_div{     width: 27px;
+    height: 55px;
+    position: absolute;
+    top: 76px;
+    right: 0;cursor: pointer;background-image:url("../themes/dhq/assets/picture/left1.png");display: none }
+.contrast_price:hover .right_div{display: block}
+.contrast_price{border: 1px solid #eee;border-top: none;height: 210px;width: 1188px;padding-left: 10px;position: relative}
+.contrast{width: 295px}
+.our_width{width: 100%;height: 100%;display: inline-block}
+.contrast_price_hide{display: none}
+.contrast_one{padding-left: 50px;margin-bottom: 10px}
+.contrast_two{padding-left: 50px;padding-bottom: 20px;    border-right: 1px solid #efefef; }
+.contrast_one_span{color: #ff0000;font-size: 18px;margin-right:30px }
+.contrast_one_span b{font-size: 18px}
+.contrast_one_span i{font-style: normal;font-size: 18px;font-weight: bold}
+.contrast_one_time i{font-style: normal}
+.contrast_two div{margin-bottom: 20px}
+.contrast_two div i{font-style: normal}
+.contrast_two p{margin-bottom: 5px}
+.contrast_a{width: 106px;height: 32px;border: 1px solid #eee;text-align: center;line-height: 32px;cursor: pointer;color: #333;
+    margin-left: 50px;border-radius: 5px;position: relative;display: none;margin-bottom: 10px}
+.contrast  .curt_contrast{color: #fff;background: #3ea3ff}
+.contrast_a:hover{color: #fff;background: #3ea3ff}
+.move li:hover .contrast_a{display: inline-block}
+.move li:hover .contrast_two{border-right: none}
+.move{height: 210px;    position: absolute; }
+.move li{float: left;width: 295px;height: 190px;padding-top: 20px}
+.move li:hover{background: #fbfafa;border-right: 1px solid #efefef;border-left: 1px solid #efefef;width: 293px}
+.move_ct{position: relative;height: 210px;width: 1188px;overflow: hidden}
+.border_none .contrast_two{border-right: none!important;}
+.add_i{background-image:url("../themes/dhq/assets/picture/add.png");width: 14px;height: 14px;display: inline-block;position: absolute ;    left:9px;  top:10px;}
+.contrast_a:hover .add_i{background-position: -14px 0 }
+/*目的地 end*/
+/*分页*/
+.pagination{margin-top: 30px ;overflow: hidden;text-align: center}
+.prev_pn,.pn, .next_pn{height: 36px;padding: 0 10px;border: 1px solid #e8e8e8;display: inline-block;line-height: 36px;font-size: 16px;color: #666;cursor: pointer}
+.pn:hover{background: #3ea3ff;color: #fff}
+.pagination .curt{background: #3ea3ff;color: #fff}
+.next_pn{margin-right: 10px}
+.pagination input{width: 38px;height: 22px;border: 1px solid #e8e8e8;padding-left: 2px;line-height: 22px;margin: 0 2px}
+.pagination span{display: inline-block;width: 44px;height: 22px;border: 1px solid #e8e8e8;padding-left: 2px;line-height: 22px;text-align: center;cursor: pointer;margin: 0 2px}
+/*分页 end*/
+/*产品对比*/
+.Popup{position: fixed;right: 0;  top: 40%;}
+.product_comparison{width: 40px;height: 160px;border: 1px solid #eee;border-right: none;text-align: center;font-size: 21px;line-height: 40px;color: #999;cursor: pointer}
+.product_comparison:hover{color: #fff;background: #3ea3ff}
+.ratio_ct,.popup_div{width: 220px;border: 1px solid #eee;border-right: none;overflow: hidden;display: none;}
+.ratio_ct_tt{width: 100%;height: 40px;text-align: center;line-height: 40px;background: #3ea3ff;color: #fff;margin-bottom: 20px;}
+.ratio_ct_main{margin-bottom: 16px;margin-left: 10px}
+.ratio_ct_main select{width: 200px;height: 20px;line-height: 20px;padding-left: 5px}
+.ratio_ct_main a,.popup_div_ct_one a{display: inline-block;width: 200px;height: 30px;line-height: 30px;text-align: center;border-radius: 5px;border: 1px solid #eee;cursor: pointer}
+.ratio_ct_main a:hover,.popup_div_ct a:hover{background: #3ea3ff;color: #fff}
+.popup_div_ct i{position: absolute;display: inline-block;width: 28px;height: 28px;background-image: url("../themes/dhq/assets/picture/no_thing.png");cursor: pointer;right: 10px}
+.popup_div_ct,.popup_div_ct_one{margin: 0 10px 10px;}
+.popup_div_ct span{display: inline-block;width: 150px}
+/*产品对比 end*/
+#flyItem{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    opacity: .5;
+    filter: alpha(opacity=50);}

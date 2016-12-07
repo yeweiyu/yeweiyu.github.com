@@ -1,0 +1,102 @@
+
+/*主题*/
+/* box-shadow:  投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色; */
+
+.theme{margin-top: 30px;height: 130px;width: 1200px}
+.theme_div a{display: inline-block;width: 100%;height: 100%}
+.theme_div:hover {  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); -webkit-transform: translate3d(0, -2px, 0); -moz-transform: translate3d(0, -2px, 0); transform: translate3d(0, -2px, 0);}
+.theme_div{height: 120px;width: 298px;float: left;overflow: hidden;margin-left: 1px;margin-top: 1px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;position: relative  }
+.theme_div b{font-size: 18px;    position: absolute;  top: 20px;  left: 105px;display: inline-block;color: #333}
+.theme_div p{   width: 175px;font-size: 12px;color: #666;    position: absolute;  top: 50px;left: 106px;}
+.theme_div_line{background-image:url("../themes/dhq/assets/picture/line.png");right: 0;  top:35px;height: 40px;width: 1px}
+.theme_div a i{display: inline-block;width: 71px;height: 73px;background-image: url("../themes/dhq/assets/picture/big_pic.png");    margin-top: 20px;  margin-left: 20px;}
+.big_pic_one{background-position: -71px 0; }
+.big_pic_two{background-position: -142px 0}
+.big_pic_three{background-position: 0 0}
+.big_pic_four{background-position: 73px 0}
+/*主题 end*/
+
+/*目的地*/
+.destination_tt{
+    width: 1200px;
+    height: 50px;
+    background: #fff;
+    line-height: 65px;
+    overflow: hidden;}
+.dn_tt_one span{font-size: 18px;color: #333;font-weight: bold;margin-left: 35px}
+.destination_tt div{position: relative}
+.destination_tt i{display: inline-block;background-image: url("../themes/dhq/assets/picture/index.png")}
+.dn_tt_one i{    width: 28px;
+    height: 25px;
+    background-position: 1px 0;
+    position: absolute;
+    top: 20px;}
+.dn_tt_two span{color: #666;cursor: pointer}
+.dn_tt_two i{    width: 20px;
+    height: 20px;
+    background-position: -30px -3px;
+    position: absolute;
+    top: 22px;
+    margin-left: 5px;
+    right: 0;}
+.dn_tt_two a{margin-right: 25px}
+.dn_tt_two a:hover{color: #3ea3ff}
+.destination_ct_div{width: 284px;height: 268px;float: left; margin: 8px 8px; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;}
+.destination_ct_div:hover {-webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); -webkit-transform: translate3d(0, -2px, 0); -moz-transform: translate3d(0, -2px, 0); transform: translate3d(0, -2px, 0);}
+.destination_ct_div div{  top: 30px;right: 20px}
+.destination_ct_div div span{font-size: 16px;color: #fff;display: block}
+.destination_ct_div div b{font-weight: normal;color: #f3f3f3;}
+.dn_tt_one  .start_red{background-position: -64px 0}
+/*目的地 end*/
+/*管家*/
+.steward_div{width: 284px;height: 268px;float: left; margin: 5px 7px; background: #fbfafa;   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;}
+.steward_div:hover {-webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); -webkit-transform: translate3d(0, -2px, 0); -moz-transform: translate3d(0, -2px, 0); transform: translate3d(0, -2px, 0);}
+.steward_div:hover .not_can_steward{display: block; -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;}
+.can_steward_div{  top: 30px;right: 20px}
+.can_steward_div span{font-size: 18px;color: #333;display: block}
+.can_steward_div b{font-weight: normal;color: #666;}
+.can_steward_div  .start_red{background-position: -64px 0}
+.not_can_steward{width: 254px;height: 208px;left: 0;top: 0;padding-left: 30px;padding-top: 60px;z-index: 666;display: none; -moz-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    transition: 0.5s linear;}
+.steward_sister,.consult,.not_can_steward p{z-index: 999;left:30px}
+.steward_sister{top:60px}
+.consult{top:82px}
+.steward_sister span{font-size: 16px}
+.consult {margin: 5px 0}
+.consult a{display: inline-block;width: 106px;height: 34px;border: 1px solid #e5e5e5;text-align: center;line-height: 34px;font-size: 16px;border-radius: 4px;cursor: pointer;position: relative;margin-right: 16px}
+.consult a:hover{background: #3ea3ff;color: #fff}
+.consult a i{display: inline-block;background-image: url("../themes/dhq/assets/img/index_small.png");    width: 22px;  height: 20px;position: absolute;
+    top: 7px;}
+.consult_i_one{background-position: -22px 0;
+    left: 14px;}
+.consult a:hover .consult_i_one{background-position: -42px 0}
+.consult_i_two{background-position: 0 0;left: 10px}
+.consult a:hover .consult_i_two{background-position: -65px 0}
+.not_can_steward p{margin-top: 18px;top: 118px;height: 118px;overflow: hidden;;color: #666;font-size: 12px;width: 238px }
+.hyaline{width: 284px;height: 268px;
+    top: 0;left: 0;    background: #fff;
+    filter: alpha(opacity=95);
+    -moz-opacity: 0.95;
+    opacity: 0.95;margin-top: -60px;margin-left: -30px;}
+.steward{height: 284px;width: 1200px}
+/*管家 end*/

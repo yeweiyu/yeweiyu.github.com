@@ -1,0 +1,76 @@
+.clear{clear: both;}
+em,i{font-style:normal;}
+button{ cursor: pointer;font-family: "Microsoft YaHei";}
+.mian{width:1200px;height: auto;margin:0 auto ;}
+.breadcrumb{line-height:29px;margin-top:13px;}
+.breadcrumb li{float: left;}
+.breadcrumb li a{color:#999;}
+.breadcrumb .current{color:#333;}
+
+.guide-left{float: left;}
+.article{width:913px;height: auto;min-height:395px;padding:20px;font-size:18px;border:1px solid #e8e8e8;background:#fafcfe;}
+.article h1{font-size:18px;}
+.article .info{margin:12px 0 20px 0;height:20px;color:#666;}
+.article .info div{float:left;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.article .info i{margin-right:4px ;}
+.info-user{display: inline-block;width: 113px;line-height:20px;float:left;margin-right:10px;}
+.info-user-img{width:20px;height:20px;border-radius:50%;overflow:hidden;margin-right:9px;}
+.info-user-img img{width:20px;height:20px;vertical-align:sub; }
+
+.info-time{display: inline-block;width: 105px;line-height:24px;margin-right:26px;}
+.info-time i{display: inline-block;width:18px;height:18px;background:url(../themes/dhq/assets/picture/details.png) 0 -570px;vertical-align:sub;}
+.info-see{display: inline-block;width: 80px;line-height:24px;margin-right:10px;}
+.info-see i{display: inline-block;width:23px;height:14px;background:url(../themes/dhq/assets/picture/details.png) -23px -570px;vertical-align:sub;}
+.info-weixin{display: inline-block;width: 60px;line-height:24px;margin-right:10px;}
+.info-weixin i{display: inline-block;width:20px;height:16px;background:url(../themes/dhq/assets/picture/details.png) -51px -570px;vertical-align:sub;}
+/*·····分享*/
+#share{display: inline-block; width: 20px; height: 22px;margin-right:20px; }
+#share a{display: inline-block;height:22px;padding-right:2px;background:url(../themes/dhq/assets/picture/details.png);margin-top:4px;line-height:20px}
+#share .bds_more{background-position:-78px -570px ;}
+/*·····分享 end*/
+.info-sc a{display:inline-block;width:17px;height:17px;background:url(../themes/dhq/assets/picture/details.png) -103px -570px;vertical-align:middle;cursor:pointer;}
+.info-sc a:hover{background-position: -125px -570px;}
+.info-sc .sc-a{background:url(../themes/dhq/assets/picture/details.png);background-position: -125px -570px;}
+.article .article-c{margin-top:10px;}
+.article p{line-height:27px;color:#666;}
+
+/*咨询*/
+/*border: 1px solid #ededed;background:#fafcfe;*/
+.advice{width:913px;padding:0 20px 25px 20px;margin-top:-1px;height:auto;border:1px solid #f3f3f3;}
+.advice .title{line-height:50px;font-weight: bold;}
+
+.advice-list{border-bottom:1px dashed #ededed;padding:30px 0;}
+.advice dl{width:915px;clear:both;}
+.advice dl dd{width:61px;height:61px;}
+.advice dl dt{height:51px;padding:5px 0;line-height:25px;}
+.advice-info{width:325px;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.release-time{color:#999;margin-left:10px;font-size:12px;}
+
+.visitor{position: relative;}
+.visitor dd{float:left;margin-right:10px;}
+.visitor dt{float:left;}
+.visitor .reply{position: absolute;top:15px;right:0;color:#059cfe;cursor:pointer;}
+.visitor .text{display:none;clear: both;}
+.visitor .text textarea{width:913px;height:123px;border:1px solid #e3e3e3;margin-top:50px;}
+.visitor .text button{width:80px;height:32px;float:right;color:#fff;border:none;border-radius:2px;background:#1facec;margin-top:5px;}
+.visitor .text button:hover{background:#0085ff;}
+.official{padding-top:40px;}
+.official dt{float:right;}
+.official dd{float:right;margin-left:10px;}
+
+.length{height:30px;line-height:30px;}
+.length em{color:#6bc2fa;}
+.advice-text{width:915px;height:123px;margin-bottom:30px;}
+.advice-text textarea{width: 903px;height:116px;line-height:22px;padding:3px 5px;border: 1px solid #ededed;}
+.advice-text button{width:107px;height:42px;margin-top:5px;float:right;font-size:19px;color:#fff;border:none;border-radius:2px;background:#1facec;}
+.advice-text button:hover{background:#0085ff;}
+.advice .apart{width:100%;height:1px;margin-bottom:-1px; clear: both;}
+
+/*咨询end*/
+.guide-right{float: right;width:232px;margin-right:-9px;}
+.guide-right h1{font-weight: bold;line-height:11px;}
+.guide-right .tags{margin-top: 17px;}
+.guide-right .tags li{float:left;margin:0 9px 13px 0;}
+.guide-right .tags li a{display:inline-block ;width:105px;height:40px;line-height:40px;text-align:center;color:#666;border:1px solid #e8e8e8;}
+.guide-right .tags li a:hover{color:#fff;background:#0085ff;border-color:#0085ff; }
+.guide-right img{margin-top:24px;width:223px;height:134px;}

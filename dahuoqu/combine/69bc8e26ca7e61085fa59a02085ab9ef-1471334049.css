@@ -1,0 +1,55 @@
+body{background:#ddeef7}
+.story-banner{width:100%;height:523px;text-align: center;background:#9ad5ff;}
+.story-banner img{}
+.story-nav{width: 100%;height:105px;background:url(../themes/dhq/assets/picture/story-nav-bg.png) repeat-x ;}
+.story-nav ul{width:1200px;height:105px;margin:0 auto ;}
+.story-nav li{float: left;width:600px;height:105px;font-size:30px;color:#eee;line-height: 85px;text-align: center;cursor:pointer;}
+.story-nav li code i{display:inline-block;width:31px;height:32px;margin-right:8px;background: url(../themes/dhq/assets/picture/details.png) ; vertical-align: sub;}
+.story-nav li code{display:inline-block ;width:600px;height:105px;font-family: "Microsoft YaHei";}
+.story-nav li .book{background-position: -164px -417px;}
+.story-nav li .people{background-position: -164px -456px;}
+.story-nav .cur{background:url(../themes/dhq/assets/picture/story-li-bg.png);}
+
+.story-nav2 {display: none; position: fixed; top: 0; height:105px;z-index: 9999;margin-top: 0; }
+.story-nav2 ul li code{ font-family: "Microsoft YaHei"; }
+
+
+
+.covers{width:1200px;height:auto;margin:56px auto 0 auto;}
+.story .column{width:102px;height:70px;margin:0 auto;font-size:36px;padding-left:3px;line-height:70px;color:#00a0e9;border-top:2px solid #00a0e9;border-bottom:2px solid #00a0e9;}
+.story-c{width:1158px;height:auto;margin-top:40px;border:1px solid #8fdefb;background:#f4fdff;padding:0px 0 0 40px;}
+
+.story-c-l{height:auto;padding-left:40px;padding-top:-20px;padding-bottom:58px;background:url(../themes/dhq/assets/picture/story-line.png) repeat-y 0 10px;}
+
+.story-c-l dl{position:relative;margin-top:50px;}
+.story-c-l dl .title{display:inline-block;height:40px;margin-top:-14px;margin-bottom:15px;padding:0 20px;line-height:40px;font-size:20px;color:#fff;border-radius:8px;background:#00a0e9;}
+.story-c-l dl .title2{display:inline-block;height:40px;margin-top:-14px;margin-bottom:15px;padding:0 12px 0 20px;line-height:40px;font-size:20px;color:#fff;border-radius:8px;background:#00a0e9;}
+.story-c-l dl .title3{display:inline-block;height:40px;margin-top:-14px;margin-bottom:15px;padding:0 6px 0 20px;line-height:40px;font-size:20px;color:#fff;border-radius:8px;background:#00a0e9;}
+.story-c-l dl .yuan{position:absolute;left:-47px;top:0;width:14px;height:14px; background:url(../themes/dhq/assets/picture/details.png) -144px -417px;}
+.story-c-l dl p{padding-left:19px;line-height:42px;font-size:20px;color:#666;}
+.story-c-l dl .p1{background:url(../themes/dhq/assets/picture/story-li-style.png) no-repeat 0 center}
+.story-c-l dl .p2{margin-top: 30px;}
+
+.story-tu{width:1068px;height:91px;}
+.story-tu span{display:inline-block;height:91px;text-align: center;float:left;}
+
+.story-tt{background:#00a0e9;color:#fff;margin-top: 10px;}
+.story-tt span{font-size:24px;line-height: 91px;}
+.story-tu-1{width:436px; }
+.story-tu-2{width:225px;}
+.story-tu-3{width:400px;}
+
+.story-cc{background:#ecf5f6;color:#666;margin-top:10px;overflow:hidden;border-left:2px solid #d0ebff }
+.story-cc span{font-size:20px;padding-top:17px;}
+.story-cc .story-tu-1{border-right:1px dashed #d8dedf;font-weight: bold;}
+.story-cc .story-tu-2{border-right:1px dashed #d8dedf;padding-top:30px;color:#00a0e9;}
+.person {margin-top:72px;}
+.person .column{width:205px;height:70px;margin:0 auto;letter-spacing:5px;font-size:36px;padding-left:3px;line-height:70px;color:#00a0e9;border-top:2px solid #00a0e9;border-bottom:2px solid #00a0e9;}
+.person-c{width:1198px;height:auto;margin-top:40px;border:1px solid #8fdefb;background:#f4fdff;padding-bottom: 45px;}
+.person-c dl {position:relative;margin-top:50px;}
+.person-c dl dt{position:absolute;width:83px;top:0;left:-6px;height:36px;line-height:36px;padding-left:33px;font-size:20px;color:#fff;background:url(../themes/dhq/assets/picture/details.png) 0 -526px;}
+.person-c dl dd{padding-top:60px;padding-left:40px;width:1140px; }
+
+.person-c dl p{padding-left:20px;line-height:42px;font-size:20px;color:#666;}
+.person-c dl .p1{background:url(../themes/dhq/assets/picture/story-li-style.png) no-repeat 0 18px;}
+.person-c dl .p2{margin-top: 30px;}
